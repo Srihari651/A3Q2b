@@ -1,5 +1,3 @@
-//0xcdEf2DCb81B74BD78cE6386dF1501991Ee9C5417//
-
 pragma solidity ^0.8.1;
 library SafeMath
 {
@@ -25,6 +23,10 @@ library SafeMath
         int256 c = a / b;
         return (true,c);
     }
+}
+contract mathOperation
+{
+    using SafeMath for int256;
     function testadd(int256 a,int256 b) external pure returns(int256)   
     {
         return SafeMath.add(a,b);
